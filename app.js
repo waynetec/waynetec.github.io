@@ -18,7 +18,11 @@ var myLinks = [
     [
         "Powerball Number Generator",
         "https://waynetec.github.io/powerball-number-generator/index.html"
-    ]
+    ],
+    [
+        "Dice Rolling Generator",
+        "https://waynetec.github.io/dice-tossing/index.html"
+    ],
 ]
 
 for( var i = 0; i < myLinks.length; i++)
