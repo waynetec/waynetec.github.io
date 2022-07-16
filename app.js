@@ -1,4 +1,9 @@
 const navDiv = document.getElementById("navigation-div");
+const heading = document.getElementById("heading");
+
+heading.textContent = "WAYNETEC";
+
+
 
 var navUL = document.createElement("ul");
 navUL.classList.add("nav-ul");

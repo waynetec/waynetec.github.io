@@ -22,10 +22,21 @@ body{
     text-align: center;
 }
 .nav-li a{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #333;
     text-decoration: none;
     text-shadow: 2px 2px 25px #333;
 }
 #navigation-div{
     background-color: #333;
     padding: 1rem;
+}
+#heading{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fefeff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 25px #333;
 }
