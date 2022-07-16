@@ -1,0 +1,52 @@
+/*
+style code goes below
+*/
+
+body{
+    background-color: #333;;
+}
+.dice-table{
+    background-color: #ccc;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Trebuchet MS";
+    font-size: 10rem;
+}
+.dice-div{
+
+    line-height: 10rem;
+    margin: 0;
+    padding: 0;
+}
+.toss-dice{
+    background-color: #ccc;
+    border-radius: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+.quantity{
+    background-color: #ccc;
+    border-radius: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+#heading, #input-div , #btn-div,#label-div{
+    text-align: center;
+}
+
+#btn-div{
+    margin-bottom: 1rem;
+}
+
+#label-div{
+    color: #f8f8ff;
+    font-size: 3rem;
+}
+

@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="heading"></div>
+        <div id="label-div">How many dice do you want?</div>
+        <div id="input-div">
+            <input type="text" name="quantity-input" id="quantity-input" class="quantity" placeholder="How many dice?" value="5">
+        </div>
+        <div id="btn-div">
+            <button class="toss-dice" id="toss-dice" onclick="rollDice(document.getElementById('quantity-input').value)">Toss Dice</button>
+        </div>
+        <div id="dice-table">
+        </div>
+        <script src="./app.js"></script>
+  
+    </body>
+</html>
