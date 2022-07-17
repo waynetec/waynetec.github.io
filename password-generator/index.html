@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="heading"></div>
+    <div id="pass-options">
+        <form action="#">
+
+            <div class="input-div">
+
+            </div>
+            <div class="label-div">
+                <label for="numbers">
+                    Numbers (0 - 9)
+                </label>
+            </div>
+            <div class="input-div">
+                <input type="checkbox" name="numbers" id="pass-numbers" class="checkbox-size" checked>
+            </div>
+            <div class="label-div">
+                <label for="lower-case">
+                    Lowercase letters (a..z)
+                </label>
+            </div>
+            <div class="input-div">
+                <input type="checkbox" name="lower-case" id="lower-case" class="checkbox-size" checked>
+            </div>
+            <div class="label-div">
+                <label for="upper-case">
+                    Uppercase Letters (A..Z)
+                </label>
+            </div>
+            <div class="input-div">
+                <input type="checkbox" name="upper-case" id="upper-case" class="checkbox-size" checked>
+            </div>
+            <div class="label-div">
+                <label for="symbols">
+                    Symbols
+                </label>
+            </div>
+            <div id="input-div">
+                <input type="checkbox" name="symbols" id="pass-symbols" class="checkbox-size" checked>
+                <input type="text" name="symbols-list" id="symbols-list" class="input-class">
+            </div>
+            <div class="label-div">
+                <label for="pass-length">
+                    How Long Do You Want Your Password To Be?
+                </label>
+            </div>
+            <div id="input-div">
+                <input type="text" name="pass-length" id="pass-length" class="input-class" value="15">
+            </div>
+
+            <div class="label-div">
+                <label for="pass-quantity">
+                    How Many Passwords Do You Want?
+                </label>
+            </div>
+            <div id="input-div">
+                <input type="text" name="pass-quantity" id="pass-quantity" class="input-class" value="1">
+            </div>
+            <div id="input-div">
+                <input type="button" value="Generate" onclick="getAPassword()">
+            </div>
+        </form>
+    </div>
+    <div id="pass-results"></div>
+    <script src="./app.js"></script>
+</body>
+</html>

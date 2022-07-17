@@ -1,0 +1,58 @@
+
+body{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+form{
+    padding: 1rem;
+}
+.input-div{
+    border: 1px solid #333;
+    font-size: 2rem;
+    margin: 1rem 0rem 1rem 0rem;
+}
+input[type=button]{
+    font-size: 2rem;
+}
+.input-class{
+    font-size: 2rem;
+    margin: 1rem 0rem 1rem 0rem;
+}
+.label-div{
+    color: ghostwhite;
+    background-color: #333333;
+}
+.checkbox-size
+{
+    height: 2rem;
+    width: 2rem;
+}
+.p-word{
+    border: 1px solid #f8f8ff;
+    margin: 0;
+    padding-left: 1rem;
+}
+#heading{
+    background-color: #333;
+    color: #f8f8ff;
+    font-family: "Trebuchet MS";
+    font-size: 3rem;
+    text-align: center;
+}
+
+#pass-options{
+    background-color: #ccc;
+    font-family: "Trebuchet MS";
+    font-size: 2rem;
+}
+
+
+#pass-results{
+    background-color: #333333;
+    color: ghostwhite;
+    font-family: "Fira Sans";
+    font-size: 3rem;
+
+}
+
