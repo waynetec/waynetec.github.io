@@ -23,6 +23,10 @@ var myLinks = [
         "Dice Rolling Generator",
         "https://waynetec.github.io/dice-tossing/index.html"
     ],
+    [
+        "Password Generator",
+        "https://waynetec.github.io/password-generator/index.html
+    ],
 ]
 
 for( var i = 0; i < myLinks.length; i++)
