@@ -25,7 +25,7 @@ var myLinks = [
     ],
     [
         "Password Generator",
-        "https://waynetec.github.io/password-generator/index.html
+        "https://waynetec.github.io/password-generator/index.html"
     ],
 ]
 
