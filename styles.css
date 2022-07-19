@@ -37,6 +37,7 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 5rem;
     font-weight: bold;
+    padding: 1rem;
     text-align: center;
     text-shadow: 2px 2px 25px #333;
 }
