@@ -14,7 +14,7 @@ var myLinks = [
     [
         "Bible Memory Verses",
         "https://waynetec.github.io/bible-memory-verses/index.html"
-    ]
+    ],
     [
         "Florida Lottery Number Generator",
         "https://waynetec.github.io/florida-lottery-generator/index.html"
