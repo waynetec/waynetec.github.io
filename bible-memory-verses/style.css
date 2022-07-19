@@ -1,0 +1,43 @@
+/*
+style code goes below
+*/
+
+/*Tags*/
+ body{
+    background-color: #333;
+ }
+/*Classes*/
+.bible-verse{
+    background-color: #333;
+    border-bottom:1px solid #f8f8f8;
+    color: #f8f8ff;
+    margin: 1rem;
+    padding: 1rem;
+}
+.book, .chapter, .verse{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: .85rem;
+}
+.book{
+    font-weight: bold;
+}
+.chapter, .verse{
+    font-weight: bold;
+}
+.text{
+    font-style: italic;
+}
+/*IDs*/
+#heading{
+    color:#f8f8ff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    margin: 2rem;
+    text-align: center;
+}
+#verses-div{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.25rem;
+}
+/*Media Rules*/
+
