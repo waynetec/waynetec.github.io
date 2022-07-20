@@ -1,0 +1,28 @@
+body{
+    background-color: #333;
+}
+h3{
+    color: #f8f8ff;
+    font-family: "Trebuchet MS";
+    font-size: 5rem;
+    text-align: center;
+}
+.canvas-p{
+    text-align:center;
+}
+#button-p{
+    text-align: center;
+}
+#button-p > button{
+    background-color: #333;
+    border-radius: 1.5rem;
+    box-shadow: 5px 5px 25px #ccc;
+    color: #f8f8ff;
+    font-size: 3rem;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+#button-p > button:hover{
+    background-color: #444;
+    cursor: pointer;
+}
