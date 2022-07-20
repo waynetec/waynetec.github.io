@@ -13,7 +13,7 @@ navDiv.append(navUL);
 var myLinks = [
     [
         "Single Dice Tosser",
-        "https://waynetec.github.io/dice-on-canvas/index.html"
+        "https://waynetec.github.io/dice-on-cavas/index.html"
     ],
     [
         "Bible Memory Verses",
