@@ -60,10 +60,22 @@ let bibleVerses = [
         text : 'Therefore take no thought, saying, What shall we eat? or, What shall we drink? or, Wherewithal shall we be clothed? (For after all these things do the Gentiles seek:) for your heavenly Father knoweth that ye have need of all these things. But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you. Take therefore no thought for the morrow: for the morrow shall take thought for the things of itself. Sufficient unto the day is the evil thereof.'
     },
     {
+        book : 'Matthew',
+        chapter : '14',
+        verse: '29-33',
+        text : '29 And he said, Come. And when Peter was come down out of the ship, he walked on the water, to go to Jesus. 30 But when he saw the wind boisterous, he was afraid; and beginning to sink, he cried, saying, Lord, save me. 31 And immediately Jesus stretched forth his hand, and caught him, and said unto him, O thou of little faith, wherefore didst thou doubt? 32 And when they were come into the ship, the wind ceased.33 Then they that were in the ship came and worshipped him, saying, Of a truth thou art the Son of God.'
+    },
+    {
         book : 'Mark',
         chapter : '10',
         verse : '45',
         text : 'For even the Son of man came not to be ministered unto, but to minister, and to give his life a ransom for many.'
+    },
+    {
+        book : 'John',
+        chapter : '3',
+        verse : '16',
+        text : 'For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.'
     },
     {
         book : 'John',
@@ -118,6 +130,12 @@ let bibleVerses = [
         chapter : '4',
         verse : '6-7',
         text : '6 Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God. 7 And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus.'
+    },
+    {
+        book : '2 Timothy',
+        chapter : '2',
+        verse : '15',
+        text : 'Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth.'
     },
     {
         book : '1 Peter',
