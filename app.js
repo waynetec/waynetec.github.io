@@ -12,7 +12,11 @@ navDiv.append(navUL);
 
 var myLinks = [
     [
-        "Coin tosser",
+        "Random Verb Generator",   
+        "https://waynetec.github.io/random-verb/" 
+    ],
+    [
+        "Coin Tosser",
         "https://waynetec.github.io/coin-toss/index.html"
     ],
     [
