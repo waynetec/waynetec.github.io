@@ -1,0 +1,47 @@
+/*
+style code goes below
+*/
+
+/*Tags*/
+ 
+/*Classes*/
+
+/*IDs*/
+
+/*Media Rules*/
+
+body{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #fefefe;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+}
+
+
+.verb-div, .input-div{
+    text-align: center;
+}
+
+.verb-div{
+    -webkit-text-stroke: red;
+    -webkit-text-stroke-width: 1px ;
+    font-size: 5rem;
+    margin-top : 4rem;
+    margin-bottom: 4rem;
+    text-shadow: 3px 3px 25px red;
+}
+
+.input-div > button{
+    background-color: #333;
+    border-radius: 1.5rem;
+    box-shadow: 5px 5px 25px #ccc;
+    color: #fefefe;
+    font-family: inherit;
+    font-size: 3rem;
+    margin: 2rem;
+    padding: 1rem;
+
+}
