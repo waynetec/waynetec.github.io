@@ -33,6 +33,16 @@ input[type=button]{
     margin: 0;
     padding-left: 1rem;
 }
+.g-button{
+    background-color: #333;
+    border-radius: 1.25rem;
+    box-shadow: 5px 5px 25px #333;
+    color: #f8f8ff;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    padding: 1rem;
+}
 #heading{
     background-color: #333;
     color: #f8f8ff;
