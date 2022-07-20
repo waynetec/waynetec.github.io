@@ -12,6 +12,10 @@ navDiv.append(navUL);
 
 var myLinks = [
     [
+        "Coin tosser",
+        "https://waynetec.github.io/coin-toss/index.html"
+    ],
+    [
         "Single Dice Tosser",
         "https://waynetec.github.io/dice-on-cavas/index.html"
     ],
