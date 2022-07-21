@@ -12,6 +12,10 @@ navDiv.append(navUL);
 
 var myLinks = [
     [
+        "Alphabet Generator",
+        "https://waynetec.github.io/abc-generator/index.html"
+    ],
+    [
         "Random Verb Generator",   
         "https://waynetec.github.io/random-verb/" 
     ],
