@@ -1,0 +1,54 @@
+/*
+style code goes below
+*/
+
+/*Tags*/
+a{
+    
+    color: #fefeff;
+    text-decoration: none;
+}
+ul{
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    background-color: #333;
+    border: 1px solid #ccc;
+    border-radius: 1.5rem;
+    box-shadow: 5px 5px 25px #333;
+    margin: 1rem;
+    padding: 1rem;
+}
+ body{
+    
+    color:#333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+ }
+/*Classes*/
+.chalkboard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: left;
+}
+.ind-letter{
+    border: 1px dashed navy;
+    border-bottom: 2px dashed #333;
+    /* flex-grow: 1; */
+    margin: 1rem;
+    padding-right: 4rem;
+    padding-left: 15px;
+}
+.ind-letter::first-letter{
+    border-right: 1px dotted navy;
+    padding-right: 5px;
+}
+/*IDs*/
+
+/*Media Rules*/
+
