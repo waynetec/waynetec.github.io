@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #0D0907;
+        }
+        form{
+            background-color: peru;
+            border:5px solid rgb(0,0,0);
+            border-radius: 5px;
+            color: beige;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0 auto;
+            padding: 25px;
+            text-align: right;
+            text-shadow: 1px 1px 5px rgb(0,0,0);
+            width: 350px;
+        }
+        form input[type="text"]{
+            border: 2px 5px;
+            background-color: #ccc;
+            border-radius: 5px;
+            font-size: 0.5em;
+            font-weight: bold;
+            line-height: 2;
+            text-align: center;
+        }
+        form input[type="button"]{
+            background-color: navy;
+            border-radius: 5px;
+            color: beige;
+            font-size: 0.5em;
+            font-weight: bold;
+            padding: 8px;
+        }
+        .frmDiv{
+            margin-bottom: 5px;
+        }
+
+    </style>
+    <script>
+        var systolic = [];
+        var diastolic = [];
+        var pulse = [];
+        
+        function addReading(){
+            var s = document.getElementById("systolic").value;
+            var d = document.getElementById("diastolic").value;
+            var p = document.getElementById("pulse").value;
+
+            systolic.push(parseFloat(s));
+            diastolic.push(parseFloat(d));
+            pulse.push(parseFloat(p));
+            var avgSys = 0;
+            var avgDia = 0;
+            var avgPul = 0;
+            for(var i=0;i<systolic.length;i++){
+                avgSys += systolic[i];              
+            }
+            for (var j = 0; j < diastolic.length; j++){
+                avgDia += diastolic[j];
+            }
+            for (var p = 0; p < pulse.length; p++){
+                avgPul += pulse[p];
+            }
+
+            avgSys = avgSys / systolic.length;
+            avgDia = avgDia / diastolic.length;
+            avgPul = avgPul / pulse.length;
+
+
+            document.getElementById("averageSys").innerHTML = avgSys.toFixed(2);
+            document.getElementById("averageDia").innerHTML = avgDia.toFixed(2);
+            document.getElementById("averagePulse").innerHTML = avgPul.toFixed(2);
+            document.getElementById("numOfReadings").innerHTML = systolic.length;
+        }
+        
+    </script>
+</head>
+<body>
+    <form action="#">
+        <div class="frmDiv">
+            <label for="sys">Systolic</label>
+            <input type="text" name="sys" id="systolic">
+        </div>
+        <div class="frmDiv">
+            <label for="dia">Diastolic</label>
+            <input type="text" name="dia" id="diastolic">
+        </div>
+        <div class="frmDiv">
+            <label for="pulse">Pulse</label>
+            <input type="text" name="pulse" id="pulse">
+        </div>
+        <div class="frmDiv">
+            <input type="button" value="Add Reading" onclick="addReading()">
+        </div>
+       <hr>
+       <div class="frmDiv"><label>Number of Readings</label></div>
+       <div class="frmDiv" id="numOfReadings">0</div>
+        
+        <div class="frmDiv"><label>Average Systolic</label></div>
+        <div class="frmDiv" id="averageSys">0</div>
+
+        <div class="frmDiv"><label>Average Diastolic</label></div>
+        <div class="frmDiv" id="averageDia">0</div>
+
+        <div class="frmDiv"><label>Average Pulse</label></div>
+        <div class="frmDiv" id="averagePulse">0</div>
+        <div class="frmDiv">
+            <input type="button" value="Clear Readings" onclick="window.location.reload()">
+        </div>
+    </form>
+   
+</body>
+</html>
