@@ -16,6 +16,10 @@ var myLinks = [
         "https://waynetec.github.io/abc-generator/index.html"
     ],
     [
+        "Blood Pressure Average",
+        "https://waynetec.github.io/blood-pressure.html"
+    ],
+    [
         "Random Verb Generator",   
         "https://waynetec.github.io/random-verb/" 
     ],
