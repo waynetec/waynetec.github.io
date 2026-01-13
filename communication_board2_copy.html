@@ -1,0 +1,159 @@
+<script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {};
+        var gk_fileData = {};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Communication Board for Kids</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="container mx-auto p-4">
+    <h1 class="text-3xl font-bold text-center mb-6 text-blue-600">Communication Board</h1>
+    <div id="communicationBoard" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+      <!-- Communication buttons will be dynamically added here -->
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var gk_isXlsx = false;
+    var gk_xlsxFileLookup = {};
+    var gk_fileData = {};
+    function filledCell(cell) {
+      return cell !== '' && cell != null;
+    }
+    function loadFileData(filename) {
+      if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+        try {
+          var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+          var firstSheetName = workbook.SheetNames[0];
+          var worksheet = workbook.Sheets[firstSheetName];
+
+          // Convert sheet to JSON to filter blank rows
+          var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+          // Filter out blank rows (rows where all cells are empty, null, or undefined)
+          var filteredData = jsonData.filter(row => row.some(filledCell));
+
+          // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+          var headerRowIndex = filteredData.findIndex((row, index) =>
+            row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+          );
+          // Fallback
+          if (headerRowIndex === -1 || headerRowIndex > 25) {
+            headerRowIndex = 0;
+          }
+
+          // Convert filtered JSON back to CSV
+          var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex));
+          csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+          return csv;
+        } catch (e) {
+          console.error(e);
+          return "";
+        }
+      }
+      return gk_fileData[filename] || "";
+    }
+  </script>
+
+  <script>
+    // Expanded array of communication options with text, color, and emoji
+    const communicationOptions = [
+      { text: "Hello", color: "bg-blue-500", image: "👋" },
+      { text: "Yes", color: "bg-green-500", image: "✅" },
+      { text: "No", color: "bg-red-500", image: "❌" },
+      { text: "Please", color: "bg-yellow-500", image: "🙏" },
+      { text: "Thank you", color: "bg-purple-500", image: "😊" },
+      { text: "I want", color: "bg-orange-500", image: "🤲" },
+      { text: "Help", color: "bg-pink-500", image: "🆘" },
+      { text: "Happy", color: "bg-teal-500", image: "😄" },
+      { text: "Sad", color: "bg-blue-700", image: "😢" },
+      { text: "Angry", color: "bg-red-700", image: "😣" },
+      { text: "Tired", color: "bg-gray-500", image: "😴" },
+      { text: "Scared", color: "bg-purple-700", image: "😨" },
+      { text: "Drink", color: "bg-indigo-500", image: "🥤" },
+      { text: "Eat", color: "bg-rose-500", image: "🍽️" },
+      { text: "Diaper", color: "bg-cyan-500", image: "🩲" },
+      { text: "Play", color: "bg-lime-500", image: "🎲" },
+      { text: "Sleep", color: "bg-blue-900", image: "🛌" },
+      { text: "Bath", color: "bg-cyan-300", image: "🛁" },
+      { text: "Book", color: "bg-green-700", image: "📖" },
+      { text: "Toy", color: "bg-yellow-600", image: "🧸" },
+      { text: "Outside", color: "bg-green-300", image: "🌳" },
+      { text: "Hug", color: "bg-pink-300", image: "🤗" },
+      { text: "Quiet", color: "bg-gray-300", image: "🤫" },
+      { text: "Music", color: "bg-indigo-300", image: "🎵" },
+      { text: "Milk", color: "bg-white-500", image: "🥛" },
+      { text: "Snack", color: "bg-orange-300", image: "🍎" },
+      { text: "Blanket", color: "bg-teal-300", image: "🛌" },
+      { text: "Sick", color: "bg-red-300", image: "🤒" },
+      { text: "More", color: "bg-lime-300", image: "➕" },
+      { text: "All done", color: "bg-gray-700", image: "🙅" },
+    ];
+
+    // Check if browser supports SpeechSynthesis
+    const synth = window.speechSynthesis;
+
+    // Function to speak text
+    function speakText(text) {
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      utterance.volume = 1;
+      utterance.rate = 1;
+      utterance.pitch = 1;
+      synth.speak(utterance);
+    }
+
+    // Create communication buttons
+    const board = document.getElementById('communicationBoard');
+    communicationOptions.forEach(option => {
+      const button = document.createElement('button');
+      button.className = `flex flex-col items-center justify-center p-4 rounded-lg ${option.color} text-white text-xl font-bold h-32 w-full hover:opacity-80 focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-${option.color.split('-')[1]}-300`;
+      button.innerHTML = `
+        <span class="text-4xl mb-2">${option.image}</span>
+        <span>${option.text}</span>
+      `;
+      button.addEventListener('click', () => speakText(option.text));
+      board.appendChild(button);
+    });
+  </script>
+</body>
+</html>
