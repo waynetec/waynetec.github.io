@@ -1,59 +1,71 @@
-a{
-    color: red;
-    font-size: 2rem;
-    text-decoration: none;
+* {
+    box-sizing: border-box;
 }
+
 body{
-    background-color: #ccc;
-    border: 0; margin: 0; padding: 0;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
 header {
-    background-color: #333;
+    background: linear-gradient(135deg, #1e3a5f 0%, #1a1a1a 100%);
+    border-bottom: 4px solid #3b82f6;
     padding: 2rem 1rem;
 }
+
+#heading{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    color: #fff;
+}
+
+#navigation-div{
+    background-color: #1a1a1a;
+    padding: 1rem;
+}
+
 .nav-ul{
     margin: 0 auto;
-    width: 80%;
     max-width: 800px;
     padding: 0;
 }
+
 .nav-li{
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(204,204,204,1) 0%, rgba(248,248,255,1) 100%);
-    border: 1px solid #fefefe;
-    border-radius: 2rem;
+    background-color: #2a2a2a;
+    border: 2px solid #3b82f6;
+    border-radius: 1rem;
     list-style-type: none;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     padding: 1rem;
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 .nav-li:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
+
 .nav-link{
     display: block;
-    text-decoration: none;
-    text-shadow: 2px 2px 25px #333;
-    color: #fff;
-    text-shadow: 1px 1px 2px #333;
-}
-.nav-desc {
-    color: #ccc;
-    font-size: 0.9rem;
-    margin: 0.5rem 0 0 0;
-}
-#navigation-div{
-    background-color: #333;
-    padding: 1rem;
-}
-#heading{
-    font-family: 'Trebuchet MS','Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
-    font-size: 4.5rem;
+    color: #3b82f6;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin: 0;
-    text-align: center;
-    text-shadow: 2px 2px 25px #000;
-    color: #fff;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #60a5fa;
+}
+
+.nav-desc {
+    color: #9ca3af;
+    font-size: 1rem;
+    margin-top: 0.5rem;
 }
