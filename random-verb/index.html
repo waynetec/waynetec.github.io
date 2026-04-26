@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Random Verb</title>
-    <link rel="stylesheet" href="./css/style.css">
-  </head>
-  <body onload="writeVerb();return false">
-     <div id="verbDiv" class="verb-div">
-
-     </div>
-     <div id="inputDiv" class="input-div">
-        <button class="verb-btn" id="verbBtn">Get new verb</button>
-     </div>
-     <script src="./scripts/verbs.js"></script>
-     <script src="./scripts/script.js"></script>
-  </body>
+    <title>Random Verb Generator</title>
+    <link rel="stylesheet" href="../css/random-verb.css">
+</head>
+<body>
+    <header>
+        <h1>Random Verb Generator</h1>
+    </header>
+    
+    <main>
+        <div id="verbDiv" class="verb-div"></div>
+        <div id="inputDiv" class="input-div">
+            <button class="verb-btn" id="verbBtn">Get new verb</button>
+        </div>
+    </main>
+    
+    <script src="../js/random-verb-data.js"></script>
+    <script src="../js/random-verb.js"></script>
+</body>
 </html>

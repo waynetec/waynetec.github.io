@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Powerball Numbers Generator</title>
+    <link rel="stylesheet" href="../css/powerball-number-generator.css">
 </head>
 <body>
-    <div id="container-div" class="container-div"></div>
-    <div id="refresh-div"></div>
-    <div id="title-div"></div>
-    <div id="disclaimer-div"></div>
-    <script src="./app.js"></script>
+    <header>
+        <h1 id="title-div">Powerball Numbers Generator</h1>
+    </header>
+    
+    <main>
+        <div id="refresh-div">
+            <button id="generate-btn" class="refresh-button">Generate</button>
+        </div>
+        
+        <div id="container-div" class="container-div"></div>
+        
+        <div id="disclaimer-div">** This site is not affiliated with the Florida Lottery or the Powerball. This generator is just for fun and you assume all risk involved in using it. Using this generator to pick your numbers does not increase your odds of winning **</div>
+    </main>
+    
+    <script src="../js/powerball-number-generator.js"></script>
 </body>
 </html>

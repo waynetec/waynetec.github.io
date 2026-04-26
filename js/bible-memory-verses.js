@@ -1,14 +1,4 @@
-/*
-Javascript template
-*/
 const versesDiv = document.getElementById("verses-div");
-
-// {
-//     book : '',
-//     chapter : '',
-//     verse : '',
-//     text : ''
-// },
 
 let bibleVerses = [
     {
@@ -120,11 +110,11 @@ let bibleVerses = [
         text : 'Therefore, my beloved brethren, be ye stedfast, unmoveable, always abounding in the work of the Lord, forasmuch as ye know that your labour is not in vain in the Lord.'
     },
     {
-		book: 'Galatians',
-		chapter: '6',
-		verse: '2',
-		text: 'Bear ye one another\'s burdens, and so fulfil the law of Christ.'
-	},	
+        book: 'Galatians',
+        chapter: '6',
+        verse: '2',
+        text: 'Bear ye one another\'s burdens, and so fulfil the law of Christ.'
+    },	
     {
         book : 'Philippians',
         chapter : '2',
@@ -155,19 +145,104 @@ let bibleVerses = [
         verse : '4',
         text : 'And God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain: for the former things are passed away.'
     },
+    {
+        book : 'Psalm',
+        chapter : '23',
+        verse : '1',
+        text : 'The Lord is my shepherd; I shall not want.'
+    },
+    {
+        book : 'Psalm',
+        chapter : '119',
+        verse : '105',
+        text : 'Thy word is a lamp unto my feet, and a light unto my path.'
+    },
+    {
+        book : 'Romans',
+        chapter : '8',
+        verse : '38-39',
+        text : 'For I am persuaded, that neither death, nor life, nor angels, nor principalities, nor powers, nor things present, nor things to come, nor height, nor depth, nor any other creature, shall be able to separate us from the love of God, which is in Christ Jesus our Lord.'
+    },
+    {
+        book : 'James',
+        chapter : '1',
+        verse : '2-3',
+        text : 'My brethren, count it all joy when ye fall into divers temptations; Knowing this, that the trying of your faith worketh patience.'
+    },
+    {
+        book : 'Colossians',
+        chapter : '3',
+        verse : '23',
+        text : 'And whatsoever ye do, do it heartily, as to the Lord, and not unto men;'
+    },
+    {
+        book : 'Hebrews',
+        chapter : '12',
+        verse : '1-2',
+        text : 'Wherefore seeing we also are compassed about with so great a cloud of witnesses, let us lay aside every weight, and the sin which doth so easily beset us, and let us run with patience the race that is set before us, Looking unto Jesus the author and finisher of our faith;'
+    },
+    {
+        book : 'Lamentations',
+        chapter : '3',
+        verse : '22-23',
+        text : 'It is of the Lord\'s mercies that we are not consumed, because his compassions fail not. They are new every morning: great is thy faithfulness.'
+    },
+    {
+        book : '2 Corinthians',
+        chapter : '4',
+        verse : '17',
+        text : 'For our light affliction, which is but for a moment, worketh for us a far more exceeding and eternal weight of glory;'
+    },
+    {
+        book : 'Hebrews',
+        chapter : '4',
+        verse : '16',
+        text : 'Let us therefore come boldly unto the throne of grace, that we may obtain mercy, and find grace to help in time of need.'
+    },
+    {
+        book : 'Philippians',
+        chapter : '4',
+        verse : '13',
+        text : 'I can do all things through Christ which strengtheneth me.'
+    },
+    {
+        book : '1 John',
+        chapter : '1',
+        verse : '9',
+        text : 'If we confess our sins, he is faithful and just to forgive us our sins, and to cleanse us from all unrighteousness.'
+    },
+    {
+        book : '1 Thessalonians',
+        chapter : '5',
+        verse : '16-18',
+        text : 'Rejoice evermore. Pray without ceasing. In every thing give thanks: for this is the will of God in Christ Jesus concerning you.'
+    },
+    {
+        book : 'Ephesians',
+        chapter : '4',
+        verse : '32',
+        text : 'And be ye kind one to another, tenderhearted, forgiving one another, even as God for Christ\'s sake hath forgiven you.'
+    },
+    {
+        book : 'Acts',
+        chapter : '1',
+        verse : '8',
+        text : 'But ye shall receive power, after that the Holy Ghost is come upon you: and ye shall be witnesses unto me both in Jerusalem, and in all Judea, and in Samaria, and unto the uttermost part of the earth.'
+    },
 ];
 
-var myHeading = document.getElementById("heading");
-myHeading.innerText = bibleVerses.length + myHeading.innerText;
+document.addEventListener('DOMContentLoaded', function() {
+    var myHeading = document.getElementById("heading");
+    myHeading.textContent = bibleVerses.length + " Memory Verses For New Christians";
 
-for (var k in bibleVerses){
-    const bibleVerse = document.createElement('div');
-bibleVerse.setAttribute("class","bible-verse");
-    versesDiv.append(bibleVerse);
+    for (var k in bibleVerses){
+        const bibleVerse = document.createElement('div');
+        bibleVerse.setAttribute("class","bible-verse");
+        versesDiv.append(bibleVerse);
 
-    bibleVerse.innerHTML += '<span class="text">\"' +bibleVerses[k]['text'] + "\"</span> \xa0\xa0-\xa0\xa0 ";
-    bibleVerse.innerHTML += '<span class="book">' + bibleVerses[k]['book'] + "</span>\xa0";
-    bibleVerse.innerHTML += '<span class="chapter">'+bibleVerses[k]['chapter'] + "</span>:";
-    bibleVerse.innerHTML +='<span class="verse">' + bibleVerses[k]['verse'] + "</span>";
-
-}
+        bibleVerse.innerHTML += '<span class="text">"' +bibleVerses[k]['text'] + "\"</span> \xa0\xa0-\xa0\xa0 ";
+        bibleVerse.innerHTML += '<span class="book">' + bibleVerses[k]['book'] + "</span>\xa0";
+        bibleVerse.innerHTML += '<span class="chapter">'+bibleVerses[k]['chapter'] + "</span>:";
+        bibleVerse.innerHTML +='<span class="verse">' + bibleVerses[k]['verse'] + "</span>";
+    }
+});

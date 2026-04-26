@@ -1,0 +1,65 @@
+/*
+style code goes below
+*/
+
+/*Tags*/
+ body{
+    background-color: #333;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ #container {
+    text-align: center;
+    padding: 1rem;
+ }
+/*Classes*/
+ .my-canvas{
+     border-radius: 50%;
+ }
+ .flip-button{
+     background-color: #1a1a1a;
+     border: 2px solid #f8f8f8;
+     border-radius: 1.5rem;
+     box-shadow: 5px 5px 25px #000;
+     color: #f8f8f8;
+     cursor: pointer;
+     font-size: 3rem;
+     margin: 1rem;
+     padding: 1rem 2rem;
+     transition: transform 0.1s ease, box-shadow 0.1s ease;
+ }
+ .flip-button:hover {
+     transform: translateY(-2px);
+     box-shadow: 7px 7px 30px #333;
+ }
+ .flip-button:active {
+     transform: translateY(1px);
+     box-shadow: 3px 3px 15px #000;
+ }
+ .status{
+     color:#f8f8f8;
+     font-size: 3rem;
+     margin-bottom: 2rem;
+     text-align: center;
+ }
+ .attribution{
+     color:#888;
+     font-size: 0.8rem;
+     margin-top: 2rem;
+     text-align: center;
+ }
+ .attribution > a{
+     color:#aaa;
+     text-decoration: none;
+ }
+ .attribution > a:hover {
+     text-decoration: underline;
+ }
+ /*IDs*/
+ #canvasDiv, #inputDiv{margin: 2rem;text-align: center;}
+/*Media Rules*/
+

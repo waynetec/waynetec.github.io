@@ -1,22 +1,27 @@
 <!doctype html>
 
-<html>
+<html lang="en">
     <head>
-        <title></title>
-        <link rel="stylesheet" href="./style.css">
+        <title>Dice Roller</title>
+        <link rel="stylesheet" href="../css/dice-tossing.css">
     </head>
     <body>
-        <div id="heading"></div>
-        <div id="label-div">How many dice do you want?</div>
-        <div id="input-div">
-            <input type="text" name="quantity-input" id="quantity-input" class="quantity" placeholder="How many dice?" value="5">
-        </div>
-        <div id="btn-div">
-            <button class="toss-dice" id="toss-dice" onclick="rollDice(document.getElementById('quantity-input').value)">Toss Dice</button>
-        </div>
-        <div id="dice-table">
-        </div>
-        <script src="./app.js"></script>
-  
+        <header>
+            <h1 id="heading">Dice Tossing</h1>
+        </header>
+        
+        <main>
+            <div id="label-div">How many dice do you want?</div>
+            <div id="input-div">
+                <input type="number" name="quantity-input" id="quantity-input" class="quantity" placeholder="How many dice?" value="5" min="1" max="100">
+            </div>
+            <div id="btn-div">
+                <button class="toss-dice" id="toss-dice">Toss Dice</button>
+            </div>
+            <div id="dice-table">
+            </div>
+        </main>
+        
+        <script src="../js/dice-tossing.js"></script>
     </body>
 </html>

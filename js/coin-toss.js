@@ -1,15 +1,10 @@
-/*
-Javascript template
-*/
-
-
 let cnt = 0;
 
 function flipIt(){
     cnt++;
     let coin = [
-        "./images/heads.png",
-        "./images/tails.png"
+        "../img/coin-toss/heads.png",
+        "../img/coin-toss/tails.png"
     ]
     
     const myCanvas = document.getElementById("coinTable").getContext('2d');
@@ -29,10 +24,12 @@ function flipIt(){
     }
     
     image.src = coin[n];
-    
+
 
 }
 
-const btnFlip = document.getElementById('flipBtn');
-
-btnFlip.addEventListener('click',flipIt);
+document.addEventListener('DOMContentLoaded', function() {
+    const btnFlip = document.getElementById('flipBtn');
+    btnFlip.addEventListener('click',flipIt);
+    flipIt();
+});

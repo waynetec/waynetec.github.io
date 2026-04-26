@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8" />
 <title>Single Dice Roller</title>
-<link rel="stylesheet" type="text/css" href="./style.css">
+<link rel="stylesheet" type="text/css" href="../css/dice-on-canvas.css">
 </head>
-<body onload="draw();return false">
-	<p><h3>Single Dice Roller</h3></p>
-	<p class="canvas-p"><canvas id="drawDice" width="155px" height="155px"
-style="border:1px solid black"></canvas></p>
-	<p id="button-p">
-
-	</p>
-	<script src="./app.js"></script>
+<body>
+    <div id="container">
+        <h1>Single Dice Roller</h1>
+        <p class="canvas-p"><canvas id="drawDice" width="155" height="155"></canvas></p>
+        <p id="button-p"></p>
+    </div>
+    
+    <script src="../js/dice-on-canvas.js"></script>
 </body>
 </html>

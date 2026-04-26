@@ -1,0 +1,45 @@
+body{
+    background-color: #333;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container {
+    text-align: center;
+    padding: 1rem;
+}
+h1{
+    color: #f8f8ff;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.canvas-p{
+    text-align:center;
+}
+#button-p{
+    text-align: center;
+}
+#button-p > button{
+    background-color: #1a1a1a;
+    border: 2px solid #f8f8f8;
+    border-radius: 1.5rem;
+    box-shadow: 5px 5px 25px #000;
+    color: #f8f8ff;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+#button-p > button:hover{
+    transform: translateY(-2px);
+    box-shadow: 7px 7px 30px #333;
+    cursor: pointer;
+}
+#button-p > button:active {
+    transform: translateY(1px);
+    box-shadow: 3px 3px 15px #000;
+}

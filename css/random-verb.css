@@ -1,0 +1,51 @@
+body{
+    background-color: #1a1a1a;
+    color: #f8f8f8;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.verb-div{
+    font-size: 5rem;
+    margin: 4rem 0;
+    text-shadow: 3px 3px 25px #ff4444;
+}
+
+.input-div > button{
+    background-color: #333;
+    border: 2px solid #f8f8f8;
+    border-radius: 1.5rem;
+    box-shadow: 5px 5px 25px #000;
+    color: #f8f8f8;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 2rem;
+    margin: 2rem;
+    padding: 1rem 2rem;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.input-div > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 7px 7px 30px #333;
+}
