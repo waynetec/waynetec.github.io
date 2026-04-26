@@ -1,0 +1,176 @@
+body {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #1e3a5f 0%, #1a1a1a 100%);
+    border-bottom: 4px solid #3b82f6;
+    padding: 1rem;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.input-section {
+    background-color: #2a2a2a;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #d1d5db;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #3b82f6;
+    border-radius: 0.5rem;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #60a5fa;
+}
+
+.form-row {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-add {
+    background-color: #3b82f6;
+    color: #fff;
+}
+
+.btn-clear {
+    background-color: #ef4444;
+    color: #fff;
+}
+
+.results-section {
+    margin-top: 1.5rem;
+}
+
+.results-section h2 {
+    color: #3b82f6;
+    margin: 0 0 1rem 0;
+}
+
+.room-card {
+    background-color: #2a2a2a;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.room-header {
+    background: linear-gradient(135deg, #1e3a5f 0%, #1a1a1a 100%);
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.room-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: #ef4444;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0 0.5rem;
+}
+
+.remove-btn:hover {
+    color: #f87171;
+}
+
+.room-measurements {
+    padding: 0.5rem 1rem;
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+.room-stats {
+    display: flex;
+    border-top: 1px solid #444;
+}
+
+.stat {
+    flex: 1;
+    padding: 0.75rem;
+    text-align: center;
+    border-right: 1px solid #444;
+}
+
+.stat:last-child {
+    border-right: none;
+}
+
+.stat-label {
+    display: block;
+    color: #9ca3af;
+    font-size: 0.85rem;
+}
+
+.stat-value {
+    display: block;
+    color: #22c55e;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 0.25rem;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Size Calculator</title>
+    <link rel="stylesheet" href="../css/room-calculator.css">
+</head>
+<body>
+    <header>
+        <h1>Room Size Calculator</h1>
+    </header>
+    
+    <main>
+        <div class="input-section">
+            <div class="form-group">
+                <label for="room-name">Room Name</label>
+                <input type="text" id="room-name" placeholder="e.g., Bathroom">
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="room-length">Length</label>
+                    <input type="number" id="room-length" step="0.1" placeholder="10">
+                </div>
+                
+                <div class="form-group">
+                    <label for="room-width">Width</label>
+                    <input type="number" id="room-width" step="0.1" placeholder="6">
+                </div>
+                
+                <div class="form-group">
+                    <label for="room-height">Height</label>
+                    <input type="number" id="room-height" step="0.1" placeholder="8">
+                </div>
+            </div>
+            
+            <div class="buttons">
+                <button id="add-room-btn" class="btn btn-add">Add Room</button>
+                <button id="clear-btn" class="btn btn-clear">Clear All</button>
+            </div>
+        </div>
+        
+        <div class="results-section">
+            <h2>Rooms</h2>
+            <div id="rooms-list"></div>
+        </div>
+    </main>
+    
+    <script src="../js/room-calculator.js"></script>
+</body>
+</html>

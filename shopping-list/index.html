@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="../css/shopping-list.css">
+</head>
+<body>
+    <header>
+        <h1>Shopping List</h1>
+    </header>
+    
+    <main>
+        <div class="input-section">
+            <div class="form-group">
+                <label for="item-name">Item Name</label>
+                <input type="text" id="item-name" placeholder="e.g., Pepsi 20 oz">
+            </div>
+            
+            <div class="form-group">
+                <label for="item-price">Price ($)</label>
+                <input type="number" id="item-price" step="0.01" placeholder="e.g., 2.28">
+            </div>
+            
+            <div class="buttons">
+                <button id="add-btn" class="btn btn-add">Add Item</button>
+                <button id="clear-btn" class="btn btn-clear">Clear List</button>
+            </div>
+        </div>
+        
+        <div class="list-section">
+            <h2>Items</h2>
+            <ul id="item-list"></ul>
+        </div>
+        
+        <div class="total-section">
+            <span class="total-label">Total:</span>
+            <span id="total-amount">$0.00</span>
+        </div>
+    </main>
+    
+    <script src="../js/shopping-list.js"></script>
+</body>
+</html>

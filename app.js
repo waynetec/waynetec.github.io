@@ -17,14 +17,19 @@ var myLinks = [
         "Generate alphabet and number sheets for learning"
     ],
     [
+        "Bible Memory Verses",
+        "https://waynetec.github.io/bible-memory-verses/index.html",
+        "Practice memorizing scripture"
+    ],
+    [
         "Blood Pressure Average",
         "https://waynetec.github.io/blood-pressure.html",
         "Track and average blood pressure readings"
     ],
-    [   
-        "Random Verb Generator",
-        "https://waynetec.github.io/random-verb/",
-        "Practice verb conjugations"
+    [
+        "Communication Board",
+        "https://waynetec.github.io/communication_board.html",
+        "AAC communication board"
     ],
     [
         "Coin Tosser",
@@ -32,14 +37,9 @@ var myLinks = [
         "Flip a coin with animation"
     ],
     [
-        "Single Dice Tosser",
-        "https://waynetec.github.io/dice-on-cavas/index.html",
-        "Roll one die on canvas"
-    ],
-    [
-        "Bible Memory Verses",
-        "https://waynetec.github.io/bible-memory-verses/index.html",
-        "Practice memorizing scripture"
+        "Dice Rolling Generator",
+        "https://waynetec.github.io/dice-tossing/index.html",
+        "Roll multiple dice"
     ],
     [
         "Florida Lottery Number Generator",
@@ -47,24 +47,34 @@ var myLinks = [
         "Generate Florida Lottery numbers"
     ],
     [
-        "Powerball Number Generator",
-        "https://waynetec.github.io/powerball-number-generator/index.html",
-        "Generate Powerball numbers"
-    ],
-    [
-        "Dice Rolling Generator",
-        "https://waynetec.github.io/dice-tossing/index.html",
-        "Roll multiple dice"
-    ],
-    [
         "Password Generator",
         "https://waynetec.github.io/password-generator/index.html",
         "Create secure passwords"
     ],
     [
-        "Communication Board",
-        "https://waynetec.github.io/communication_board.html",
-        "AAC communication board"
+        "Powerball Number Generator",
+        "https://waynetec.github.io/powerball-number-generator/index.html",
+        "Generate Powerball numbers"
+    ],
+    [
+        "Random Verb Generator",
+        "https://waynetec.github.io/random-verb/",
+        "Practice verb conjugations"
+    ],
+    [
+        "Room Calculator",
+        "https://waynetec.github.io/room-calculator/index.html",
+        "Calculate room measurements"
+    ],
+    [
+        "Shopping List",
+        "https://waynetec.github.io/shopping-list/index.html",
+        "Track items and prices"
+    ],
+    [
+        "Single Dice Tosser",
+        "https://waynetec.github.io/dice-on-cavas/index.html",
+        "Roll one die on canvas"
     ],
 ]
 
